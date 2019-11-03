@@ -1,9 +1,11 @@
 package com.example.calculator;
 
-public class Valuenumbers {
-    private Values[] values;
+import java.util.Map;
 
-    public Values[] getValues(){
+public class Valuenumbers {
+    public Map<String,Values> values;
+
+    public Map<String,Values> getValues(){
         return values;
     }
 }

@@ -200,5 +200,19 @@
         app:layout_constraintStart_toEndOf="@+id/divide"
         app:layout_constraintTop_toBottomOf="@+id/subtract" />
 
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Previous Calculations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equal" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

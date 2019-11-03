@@ -2,6 +2,8 @@ package com.example.calculator;
 
 import com.google.firebase.firestore.auth.User;
 
+import java.util.Map;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -14,5 +16,5 @@ public interface Api {
     Call<Values> setData( @Body Values user);
 
     @GET("/upload/calculator")
-    Call<Valuenumbers> getData();
+    Call<Map<String,Values>> getData();
 }

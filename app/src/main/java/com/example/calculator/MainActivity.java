@@ -17,6 +17,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.auth.User;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         clear=(Button)findViewById(R.id.clear);
         equal=(Button)findViewById(R.id.equal);
         zero=(Button)findViewById(R.id.zero);
-        //previous=(Button)findViewById(R.id.previous);
+        previous=(Button)findViewById(R.id.previous);
 
         one.setOnClickListener(
                 new View.OnClickListener() {
@@ -314,7 +315,15 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-
+        previous.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent=new Intent(MainActivity.this,Records.class);
+                        startActivity(intent);
+                    }
+                }
+        );
 
     }
 }
